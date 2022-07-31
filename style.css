@@ -1,0 +1,96 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  grid-template-rows: 1fr 0.5fr 1.1fr 1.1fr 1.2fr 1.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "namaWeb namaWeb namaWeb"
+    "tipe tipe tipe"
+    "gambar inputArea inputArea"
+    "gambar endOfBuild endOfBuild"
+    "tabelKedalaman tabelKedalaman tabelKedalaman"
+    "grafikArea grafikArea grafikArea";
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.namaWeb {
+  grid-area: namaWeb;
+}
+
+.namaWeb h1 {
+  font-weight: 600;
+  padding: 1%;
+  padding-left: 4%;
+}
+
+.tipe {
+  grid-area: tipe;
+}
+
+.tipe a {
+  padding-left: 5ch;
+  margin: auto;
+}
+
+.gambar {
+  grid-area: gambar;
+}
+
+.gambar img {
+  padding-left: 10%;
+  padding-top: 10%;
+  width: 70%;
+}
+
+.inputArea {
+  grid-area: inputArea;
+}
+
+.inputArea form {
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.endOfBuild {
+  grid-area: endOfBuild;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.tableEOB {
+  width: 40%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.tabelKedalaman {
+  grid-area: tabelKedalaman;
+  padding-left: 4%;
+}
+
+.grafikArea {
+  grid-area: grafikArea;
+  padding-left: 4%;
+}
